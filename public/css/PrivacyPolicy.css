@@ -1,0 +1,61 @@
+.font-size-1-2-second-privacy{
+    font-size: 0.9rem;
+    font-weight: 400; 
+    font-family: 'Poppins, sans-serif',
+
+}
+.font-size-2-6-second{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Poppins, sans-serif',
+}
+
+/* Accordion.module.css */
+.accordion {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+  }
+  
+  .open {
+    max-height: 500px; /* Adjust this value based on your content */
+  }
+
+  .btn-open-close{
+    font-size: 15px;
+    font-weight: 1500;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-height: 35px;
+  }
+
+
+  .section-border{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+
+  .float-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .float-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+  }

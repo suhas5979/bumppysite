@@ -1,0 +1,27 @@
+{
+    "locales": [
+        "en",
+        "en-IN",
+        "en-AU",
+        "en-BN",
+        "en-BR",
+        "en-VI",
+        "hi",
+        "bn",
+        "te",
+        "mr",
+        "ta",
+        "ur",
+        "gu",
+        "kn",
+        "or",
+        "ml",
+        "pa",
+        "as",
+        "mai",
+        "sa",
+        "vi",
+        "pt"
+    ],
+    "defaultLocale": "en"
+}

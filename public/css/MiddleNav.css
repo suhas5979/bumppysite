@@ -1,0 +1,332 @@
+/* MiddleNav.module.css */
+.midnavbarContainer {
+    position: sticky;
+    top:87px;
+    /* top:0px; */
+    z-index: 500; 
+    padding-top: 10px;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    width: 100%;
+  
+    align-items: center;
+
+  }
+  
+  .midnavbarContainerNavbar {
+    position: sticky;
+    top:0px;
+    z-index: 1000; 
+    /* padding-top: 10px; */
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    width: 100%;
+  
+    align-items: center;
+
+  }
+  
+  .sticky {
+    /* padding-top: 15px; */
+  }
+  .mobileFontSize {
+    font-size: 10px;
+    font-weight:medium;
+    position: relative;
+    border-bottom: 1.7px solid transparent; /* Use transparent border by default */
+    transition: border-bottom 0.3s ease, height 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  .mobileFontSize:hover {
+   
+    border-bottom: 1.7px solid #212529; /* Adjust the color as needed */
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .mobileFontSize {
+      font-size: 20px; /* Adjust the font size for tablets and larger screens */
+      font-weight:medium;
+    }
+  
+ 
+  }
+  .mobileFontSize1 {
+    font-size: 0.8rem;
+    font-weight:medium;
+    padding: 2px;
+    position: relative;
+    border-bottom: 1.7px solid transparent; 
+    transition: border-bottom 0.3s ease, height 0.3s ease; 
+  }
+  
+  .mobileFontSize1:hover {
+   
+    border-bottom: 1.7px solid #212529; 
+    cursor: pointer;
+
+  }
+
+.dropdown-menu{
+  background-color:  #212529;
+  border-radius: 0px;
+  color: white;
+  padding: 1px;
+
+}
+.dropdown-item{
+
+  color: white;
+  background-color: #212529;
+}
+.dropdown-toggle.show.nav-link{
+
+  color: white;
+}
+
+.custom-dropdown .dropdown-item.active,
+.custom-dropdown .dropdown-item:hover {
+  background-color: #212529; /* Set the background color for both active and hovered states */
+}
+.custom-dropdown {
+  color: white;
+  border-radius: 0px;
+}
+
+
+  .transition-div {
+    position: absolute; /* or "fixed" depending on your layout needs */
+    top: 5.6rem; /* adjust the positioning as needed */
+    left: 0; /* adjust the positioning as needed */
+    z-index: 999; /* adjust the z-index to make sure it appears on top */
+    height: 0;
+    opacity: 0;
+    transition: height 5s ease-in-out, opacity 5s ease-in-out;
+    background-color: #212529;
+    width: 100%;
+    padding-bottom: 1rem;
+    opacity: 0.95;
+    
+    height: 10rem;
+  }
+
+  .custom-input-2{
+    background-color: #fff;
+    border: #212529 solid 2px;
+    border-radius: 10px 0px 0px 10px;
+    color: #000;
+  }
+  .custom-input-2:focus{
+    background-color: #b9b6b677;
+    border: #212529 solid 2px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .custom-btn1{
+    background-color: #212529 ;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .custom-btn1:hover{
+    background-color: #212529 ;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .custom-input {
+    background-color: transparent;
+    opacity: 0.7;
+    border:2px;
+    caret-color: rgb(17, 17, 17);
+    color: rgb(19, 19, 19);
+    border-color: #212529;
+  }
+ 
+
+  .custom-input::placeholder {
+    font-size: 28px; /* Adjust the font size as needed */
+  }
+  
+
+  
+  /* Optional: Customize the blinking cursor */
+  .custom-input:focus {
+    caret-color: white; /* Change the color of the blinking cursor */
+    background-color: transparent;
+    opacity: 0.5;
+    border:0px;
+  }
+
+  .custom-input:focus {
+    animation: blink 1s infinite; /* Adjust the duration as needed */
+    color: white; /* Set the focused text color to white */
+  }
+  
+
+
+  .loading-ring {
+    border: 8px solid #000;
+    border-top: 8px solid #f3f3f3 ;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .search-form1 {
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust as needed */
+    
+  }
+
+  .search-input1 {
+    background-image: url('/images1/Search_gray.svg'); /* Adjust the path to your image */
+   
+    color: #fff;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: left 10px center; /* Adjust the position as needed */
+  
+  }
+  .left-right-padding{
+        padding-bottom: 2rem;
+          padding-top: 2rem;
+          padding-Left: 10rem;
+          padding-Right: 10rem
+  }
+
+  .left-right-paddingOnly{
+    padding-bottom: 0rem;
+      padding-top: 2rem;
+      padding-Left: 10rem;
+      padding-Right: 10rem
+}
+  .left-right-padding1{
+    padding-bottom: 3rem;
+      padding-top: 3rem;
+      padding-Left: 10rem;
+      padding-Right: 5rem
+}
+
+@media (min-width: 768px) {
+.category-height{
+height: 50vh;
+}
+}
+  /* Responsive Styles */
+@media (max-width: 768px) {
+
+  .left-right-padding{
+    padding-bottom: 0rem;
+      padding-top: 0rem;
+      padding-Left: 1rem;
+      padding-Right: 1rem
+    }
+
+    .loading-ring {
+      border: 8px solid #000;
+      border-top: 8px solid #f3f3f3 ;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem;
+    }
+    .left-right-paddingOnly{
+      padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-Left: 1rem;
+        padding-Right: 1rem
+  }
+    .left-right-padding1{
+      padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-Left: 1rem;
+        padding-Right: 1rem
+  }
+}
+
+.bold-2{
+  font-weight: 550;
+  color: rgba(62, 50, 50, 0.75);
+}
+
+.gap-1 {
+  gap: 15px;
+  display: flex;
+}
+.text-gray{
+  color: rgba(107, 107, 107, 1);
+}
+.font1{
+  font-size: 0.9rem;
+}
+.bg1{
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(107, 107, 107, 1);
+}
+.black-filter1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+  pointer-events: none;  /* Adjust the alpha (last value) for transparency */
+}
+.black-filter-overlay {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha for transparency */
+  pointer-events: none; /* Allow interaction with the underlying content */
+}
+
+.card-text1 {
+  z-index: 100; /* Ensures the text appears above the overlay */
+color: #000;
+}
+.font2{
+  font-size: 0.9rem;
+  /* color: #000; */
+}
+.font5{
+  font-size: 0.7rem;
+  /* color: #000; */
+}
+.font3{
+  font-size: 1.1rem;
+}
+.font4{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.single-post-title2{
+  line-height: 1.2;
+  color: #000;
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.fontsize-0-9{
+  font-size: .9rem;
+}
+.fontsize-2-6{
+  font-size: 2.6rem;
+}

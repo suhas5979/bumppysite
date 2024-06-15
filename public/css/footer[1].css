@@ -1,0 +1,117 @@
+@media (min-width: 800px) {
+  #parent-n{
+    padding-left: 10rem !important;
+    padding-bottom: 5rem !important;
+    padding-right: 10rem !important;
+  }
+  #icons-n{
+    gap: 2rem   !important;
+    }
+}
+
+@media (max-width: 764px) {
+  #links-n {
+    font-size: 60% !important;
+  }
+  #footerColumns-n{
+    justify-content: start !important;
+    gap: 1rem !important;
+  }
+
+  #logos-n {
+    margin-left: 20px !important;
+    align-items: center !important;
+    gap: 1vw;
+  }
+
+  #parent-n{
+    padding-bottom: 5rem !important;
+    /* height: 10rem !important; */
+    padding-left: 1.5rem !important;
+  }
+
+  #bumppyLogo-n{
+    transform: none !important;
+  }
+  #bumppyLogo {
+    height: 30px;
+    width: 50px;
+  }
+
+  #mobileViewTextSmall {
+    align-items: center;
+    font-size: 60% !important;
+  }
+
+  #logoText {
+    font-size: 0.5rem !important;
+  }
+
+  #footerLogo {
+    flex-direction: column;
+    justify-content: center !important;
+    /* height: 35vw !important; */
+    /* width: 20vw !important; */
+    font-size: 10vw !important;
+    min-width: 15%
+  }
+  #commonLogos {
+    /* flex-direction: column; */
+    /* justify-content: center !important; */
+    height: 35vw !important;
+    width: 20vw !important;
+    font-size: 10vw !important;
+    min-width: 15%
+  }
+
+  #svgHover {
+    /* flex-direction: column; */
+    /* justify-content: center !important; */
+    height: 35vw !important;
+    width: 20vw !important;
+    font-size: 10vw !important;
+    min-width: 15%
+  }
+  #footerLogo>div {
+    margin-bottom: 10px;
+  }
+}
+
+#footerLogo:hover {
+  cursor: pointer;
+  color: #ffcc01 !important;
+  transition: color 0.3s, transform 0.3s;
+  transform: translateY(-5px);
+}
+
+#links-n:hover {
+  cursor: pointer;
+  color: #ffcc01 !important;
+  transition: color 0.3s, transform 0.3s;
+  transform: translateX(5px);
+}
+
+#logoText:hover {
+  color: #ffcc01 !important;
+}
+
+.svg:hover {
+  fill: #ffcc01;
+  background-color:#ffcc01;
+  border-radius: 50px !important;
+  padding: 2px !important;
+}
+
+#iconHover:hover{
+  fill: #ffcc01 !important;
+}
+
+
+.svgHover:hover rect{
+  fill: #FFCC01 !important;
+}
+.svgHover:hover path{
+  stroke: #FFCC01 !important;
+  
+}
+

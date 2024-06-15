@@ -1,0 +1,293 @@
+.expanded-p{
+    height: 80px !important;
+    overflow: hidden !important; /* Adjust according to your content height */
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+    background: transparent;  /* Optional: Set a transparent background color */
+  }
+@media only screen and (max-width: 600px) {
+    #CompanyParent {
+        overflow-x: hidden;
+        color: rgba(0, 0, 0, 0.524)
+    }
+
+    #aboutHeadingSec1 {
+        font-size: 1.8rem !important;
+        width: 100% !important;
+        height: 50% !important;
+        color: black !important;
+        text-align: center !important;
+        align-items: start !important;
+        justify-content: center !important;
+    }
+    
+    #aboutHeadingSec1Parent {
+        height: 10% !important;
+        width: 100% !important;
+    }
+
+    #textSec1 {
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+    #parentSec2 {
+        padding: 4rem 2rem 2rem 2rem !important;
+    }
+
+    #headingSec2 {
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+        text-align: center !important;
+    }
+
+    #subHeadingSec2 {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+
+    #contentSec2 {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        margin-top: 0.5rem !important;
+    }
+
+    #textSec2 {
+        font-size: 1.125rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+        color: #252525 ;
+        text-align: center !important;
+        line-height: 1.9rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    #sec2CollageParent {
+        height: 14rem !important
+    }
+
+    #parentSec4 {
+        padding: 7rem 2rem 7rem 2rem !important;
+        align-items: flex-end !important;
+        justify-content: end !important;
+    }
+
+    #faq {
+        font-size: 1rem !important;
+    }
+
+    #faqIcon-n {
+        padding: 0.1rem 0.2rem !important;
+    }
+
+    #textSec4 {
+        font-size: 0.8rem !important;
+        width: 100% !important;
+        line-height: 1.5rem !important
+    }
+
+    #contactUs {
+        padding: 2rem !important
+    }
+
+    #aboutSec1Parent {
+        align-items: center !important;
+        padding: 2rem 2rem 0 2rem !important;
+        flex-direction: column;
+    }
+
+    #aboutSec2Parent {
+        padding: 2rem !important;
+        height: 200% !important;
+    }
+
+    #aboutSec3Parent {
+        padding: 2rem !important;
+        height: 40% !important
+    }
+
+    #aboutSec4Parent {
+        margin: 2rem !important;
+        height: 40% !important;
+        
+    }
+
+    #cardsSec2 {
+        width: 7.7rem !important;
+        padding: 0.5rem !important;
+        align-items: center !important;
+        margin: 1rem !important
+    }
+
+    #cardsSec2Parent {
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    #cardHeadingSec2 {
+        font-size: 1.3rem !important;
+        text-align: center !important;
+        padding-bottom: 1rem !important;
+    }
+
+    #cardTextSec2 {
+        font-size: 0.8rem !important;
+    }
+
+    #aboutDropdownContentSec4 {
+        width: 100% !important;
+       
+    }
+    #aboutDropdownHeading{
+        font-size: 0.9rem !important;
+        padding: 0 1rem !important;
+    }
+    #aboutDropdownTextParent{
+        text-align: justify !important;
+        
+    }
+    #aboutDropdownText{
+        /* width: 20% ; */
+        /* background-color: red !important; */
+        font-size: 0.8rem !important;
+        padding: 0.5rem !important;
+        /* text-align: justify !important; */
+        
+    }
+    #aboutDropdownSpan{
+        padding:0.5rem !important;
+    }
+   
+}
+
+#exploreAboutHover:hover {
+    box-shadow: 0px 0px 20px rgba(187, 186, 186, 0.5) !important;
+    border: none !important
+}
+
+@keyframes slideAnimationOpen-n {
+    from {
+        transform: translateY(-50px);
+        /* Initial position */
+    }
+
+    to {
+        transform: translateY(0);
+        /* Final position */
+    }
+}
+
+
+
+@keyframes slideAnimationClose-n {
+    from {
+        transform: translateY(0);
+        /* Initial position */
+    }
+
+    to {
+        transform: translateY(-50px);
+        /* Final position */
+    }
+}
+
+.customAccordionParent {
+    margin-top: -40rem !important;
+    width: 45% !important;
+    margin: 1rem !important;
+    
+  }
+
+  .customAccordionHeader{
+    border-radius: 500px !important;
+  }
+
+  @media (max-width: 1300px) and (min-width: 700px) {
+    /* Add your styles for this specific range */
+    #parentSec2 {
+    padding-top: 2.6rem !important;
+    padding-bottom: 2.6rem !important;
+      padding-left: 2.6rem !important;
+      padding-right: 2.6rem !important;
+      
+    }
+    #contentSec2{
+        
+        display: flex !important;
+      flex-direction: column !important;
+    }
+    #aboutHeadingSec1{
+        /* padding-right: 2.6rem !important; */
+        margin: 0 !important;
+        width: 100% !important;
+        /* height: 20vh !important; */
+        text-align: center !important;
+    }
+    
+    #imageCollageSec2{
+        width: 100% !important;
+    }
+    #contactUs{
+        padding-top: 2.6rem !important;
+        padding-bottom: 2.6rem !important;
+          padding-left: 2.6rem !important;
+          padding-right: 2.6rem !important;
+    }
+    #headingSec2{
+        font-size: 2.625rem !important;
+    }
+    #aboutSec2Parent{
+        padding-top: 2.6rem !important;
+        padding-bottom: 2.6rem !important;
+          padding-left: 2.6rem !important;
+          padding-right: 2.6rem !important;
+    }
+    #aboutSec1Parent{
+        padding-top: 2.6rem !important;
+        /* width: 100% !important; */
+        padding-right: 2.6rem !important;
+          padding-left: 2.6rem !important;
+          padding-bottom: 2.6rem !important;
+          flex-direction: column !important;
+    }
+    #contactUsSec3{
+        padding-top: 2.6rem !important;
+        padding-bottom: 2.6rem !important;
+          padding-left: 2.6rem !important;
+          padding-right: 2.6rem !important;
+          margin: 0 !important
+    }
+    #contactFormWebView{
+        height: '900px' !important
+    }
+    #addressSec5{
+        padding-top: 2.6rem !important;
+        padding-bottom: 2.6rem !important;
+          padding-left: 2.6rem !important;
+          padding-right: 2.6rem !important;
+    }
+    #addressSec5Child{
+       padding: 0 !important;
+       margin: 0 !important 
+    }
+   #aboutSec4Parent{
+    margin-top: 2.6rem !important;
+    margin-bottom: 2.6rem !important;
+      margin-left: 2.6rem !important;
+      margin-right: 2.6rem !important;
+   }
+   #aboutOurProductSec3Parent{
+    padding-left: 2.6rem !important;
+    padding-right: 2.6rem !important;
+   }
+#aboutExploreParent{
+    padding-left: 2.6rem !important;
+    padding-right: 2.6rem !important;
+}
+#aboutHeadingSec1Parent{
+    flex: 1 !important;
+}
+  }

@@ -1,0 +1,219 @@
+
+.bg-yellow-css{
+    background-color: rgba(254, 214, 0, 1);
+}
+.largest-font-size{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.list-box-jobs{
+    border-radius: 20px;
+    border: 1px solid rgba(206, 206, 206, 1);
+}
+.font-size-1-2-second{
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.font-size-0-9-second{
+    font-size: 0.9rem;
+    /* font-weight: 500; */
+    white-space: nowrap;
+    
+}
+.font-size-0-9-second-bold{
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: rgba(114, 114, 114, 1);
+    
+
+}
+
+.circular-img-wrapper {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 10px; 
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circular-img {
+    
+    display: block;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+
+
+
+
+
+
+
+
+
+  .hover-product {
+    position: relative;
+    background-color: transparent; /* Set background to transparent initially */
+    border-radius: 30px;
+    overflow: hidden; /* Ensure the overflow is hidden to hide the pseudo-element */
+  }
+  
+  .hover-product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change this to your desired background color */
+    transition: left 2s ease;
+  }
+  
+  .hover-product:hover::before {
+    width: 200%; /* Double the width to cover the entire element */
+  }
+  
+  .hover-product:hover {
+    background-color: #fff; /* Apply white background on hover */
+  }
+
+
+
+
+
+
+
+
+
+  .textContainer {
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;
+     width: 100%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+  }
+  
+  .text {
+    position: relative;
+    display: inline-block;
+    color: black;
+    z-index: 1;
+    border-radius: 30px;
+
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Set width to 0 initially */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1); /* White background with transparency */
+    transition: width 0.5s ease; /* Transition width property */
+    z-index: 0;
+    pointer-events: none; /* Ensure the background doesn't capture pointer events */
+    border-radius: 30px;
+
+  }
+  
+  .textContainer:hover .background {
+    width: 100%; /* Expand width on hover */
+    border-radius: 30px;
+
+  }
+
+
+
+
+
+
+
+  
+  @media (max-width: 768px) {
+    .font-size-1-2-second{
+        font-size: 1.2rem;
+        font-weight: 500;
+    
+    }
+    .font-size-0-9-second{
+        font-size: 0.9rem;
+        /* font-weight: 500; */
+        white-space: nowrap;
+    }
+    .font-size-0-9-second-bold{
+        font-size: 0.9rem;
+        font-weight: 500;
+        
+    
+    }
+    .largest-font-size{
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+  }
+
+
+  .search-form1-jobs-section {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    
+  }
+
+  .search-input1-jobs-section {
+    background-image: url('/images1/Search_gray.svg'); 
+   
+    color: #fff;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: right 25px center; 
+  
+  }
+
+  .custom-input-2-jobs-section{
+    background-color: #fff;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    border-radius: 30px;
+    color: #000;
+  }
+
+
+  .search-input1-jobs-section-left {
+    background-image: url('/images1/Search_gray.svg'); 
+    color: #fff;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: right 0 center; 
+}
+
+  .custom-input-2-jobs-section-left{
+    background-color: #fff;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    border-radius: 30px;
+    color: #000;
+  }
+
+
+  .search-input1-jobs-section:focus,
+.custom-input-2-jobs-section:focus,
+.search-input1-jobs-section-left:focus,
+.custom-input-2-jobs-section-left:focus {
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+}
+.btn-jobs-second{
+    background-color: rgba(24, 30, 75, 1);
+    color: #fff;
+    border-radius: 10px;
+}

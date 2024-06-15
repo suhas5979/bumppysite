@@ -1,0 +1,374 @@
+
+
+
+
+/* Add this to your CSS file or style section */
+.scrollable-section {
+    height: 30rem;
+    overflow-y: scroll; /* Use 'scroll' instead of 'auto' to force the scrollbar */
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; 
+  }
+  
+
+.slide-bg{
+    background-color: rgba(254, 214, 0, 1);
+    /* background-image: url('/images1/IMG.jpg'); */
+
+}
+.font6{
+    font-size: 42px;
+    font-weight:600;
+}  
+.font7{
+    font-size: 32px;
+    font-weight:600;
+}  
+
+
+.btn-jobs{
+    background-color: rgba(24, 30, 75, 1);
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-jobs :focus{
+  background-color: rgba(24, 30, 75, 1);
+  color: #fff;
+  border-radius: 10px;
+}
+.custom-align{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.search-form1-jobs {
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust as needed */
+    
+  }
+
+  .search-input1-jobs {
+    background-image: url('/images1/Search_gray.svg'); /* Adjust the path to your image */
+   
+    color: #fff;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: right 25px center; /* Adjust the position as needed */
+  
+  }
+
+  .custom-input-2-jobs{
+    background-color: #fff;
+    border: #212529 solid 0px;
+    border-radius: 0px 3rem 3rem 0px;
+    color: #000;
+    border-left: #212529 solid 1px;
+  }
+
+
+  .search-input1-jobs-left {
+    background-image: url('/images1/Search_gray.svg'); /* Adjust the path to your image */
+    color: #fff;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-position: right 0 center; /* Adjust the position as needed */
+}
+
+  .custom-input-2-jobs-left{
+    background-color: #fff;
+    border: #212529 solid 0px;
+    border-radius: 3rem 0px 0px 3rem;
+    color: #000;
+  }
+
+
+
+
+
+
+
+  @keyframes resizeAnimation {
+    from {
+      width: 2rem; /* Starting width */
+    }
+    to {
+      width: 20rem; /* Final width */
+    }
+  }
+  
+  .resizing {
+    animation: resizeAnimation 10s ease forwards;
+  }
+
+
+
+
+  .careersContainer {
+    /* Add your styles for the careers container here */
+  }
+  
+  .resizingImageContainer {
+    /* Add your styles for the resizing image container here */
+  }
+
+  .resizing-image {
+    width: 10rem;
+    transition: width 1s ease;
+  }
+  
+  .resizing-image.resizing {
+    width: 20rem !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* styles/Home.module.css */
+.container {
+    overflow-x: hidden;
+}
+
+.horizontalScroll {
+    flex: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.horizontalContent {
+    display: inline-block;
+    min-width: 120vw;
+    height: 30rem;
+    background-color: lightblue; /* Example styling */
+    /* width: 100%; */
+}
+
+.verticalContent {
+    flex: 1;
+    height: 20rem;
+    background-color: lightcoral; /* Example styling */
+}
+.font9{
+    color: #fff;
+    font-size: 32px;
+}
+.font10{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.transition-opacity {
+    transition: opacity 3s ease; /* Adjust the duration and timing function as needed */
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .grad-1 {
+    background: linear-gradient(to right, #00000034,rgba(218, 27, 96, 0));
+  }
+
+  .font11{
+    font-size: 1.2rem;
+  }
+
+
+
+  .left-right-padding-10{
+    padding-bottom: 0rem;
+    padding-top: 10rem;
+    padding-Left: 10rem;
+    padding-Right: 0rem;
+    margin-right: 0rem;
+  }
+  .left-right-padding-jobs{
+    padding-bottom: 5rem;
+      padding-top: 5rem;
+      padding-Left: 10rem;
+      padding-Right: 10rem
+}
+.bg-yellow{
+  background-color: rgba(254, 214, 0, 1);
+  height: 90vh;
+}
+@media (max-width: 768px) {
+    .left-right-padding-10{
+      padding-bottom: 0rem;
+      padding-top: 1rem;
+      padding-Left: 1rem;
+      padding-Right: 0rem;
+      margin-right: 0rem;
+    }
+    .left-right-padding-jobs{
+      padding-bottom: 0rem;
+        padding-top: 1rem;
+        padding-Left: 1rem;
+        padding-Right: 1rem
+  }
+  .font6{
+    font-size: 28px;
+    font-weight:600;
+} 
+
+.bg-yellow{
+    background-color: rgba(254, 214, 0, 1);
+   /* height: 150vh; */
+   height: auto;
+}
+ }
+
+
+ @media only screen and (max-width: 767px) {
+  .scrollable-section {
+    height: 45rem;
+    overflow-y: scroll; /* Use 'scroll' instead of 'auto' to force the scrollbar */
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; 
+  }
+}
+  .bg-yellow1{
+    background-color: rgba(254, 214, 0, 1);
+ 
+}
+
+/* General hover styles for the bg-hoverable class */
+.bg-hoverable:hover {
+  cursor: pointer;
+}
+
+/* Bumppy Media */
+.bg-media {
+  background: linear-gradient(to right, rgba(18, 179, 235, 1),rgba(84, 96, 249, 1));
+}
+
+.bg-media.hovered {
+  background: linear-gradient(to right, rgba(18, 179, 235, 1),rgba(84, 96, 249, 1));
+
+}
+
+/* Bumppy Flights */
+.bg-flights {
+  background: linear-gradient(to right, rgba(255, 154, 158, 1),rgba(253, 160, 85, 1));
+}
+
+.bg-flights.hovered {
+  background: linear-gradient(to right, rgba(255, 154, 158, 1),rgba(253, 160, 85, 1));
+  color: #fff;
+
+}
+
+/* Chaafo */
+.bg-chaafo {
+  background: linear-gradient(to right,rgba(249, 200, 35, 1),rgba(248, 155, 41, 1));
+
+}
+
+.bg-chaafo.hovered {
+  background: linear-gradient(to right,rgba(249, 200, 35, 1),rgba(248, 155, 41, 1));
+
+}
+
+/* Shoppek */
+.bg-shoppek {
+  background: linear-gradient(to right, rgba(150, 230, 161, 1),rgba(212, 252, 121, 1));
+
+}
+
+.bg-shoppek.hovered {
+  background: linear-gradient(to right, rgba(150, 230, 161, 1),rgba(212, 252, 121, 1));
+
+}
+
+/* Bumppy Payment */
+.bg-payment {
+  background: linear-gradient(to right, rgba(50, 159, 231, 1),rgba(109, 213, 250, 1));
+
+}
+
+.bg-payment.hovered {
+  background: linear-gradient(to right, rgba(50, 159, 231, 1),rgba(109, 213, 250, 1));
+
+}
+
+/* Exam Notice */
+.bg-exam {
+  background: linear-gradient(to right, rgba(105, 110, 255, 1),rgba(248, 172, 255, 1));
+
+}
+
+.bg-exam.hovered {
+  background: linear-gradient(to right, rgba(105, 110, 255, 1),rgba(248, 172, 255, 1));
+
+}
+
+
+.careerTechNewsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .careerTechNewsContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0;
+    }
+
+}
+
+.font-size-1-2-main{
+  font-size: 1.2rem;
+ font-Weight:500;
+}
+.custom-input-2-career{
+  background-color: #ffffff;
+  border: #21252986 solid 0px;
+  border-radius: 50px ;
+  color: #000;
+}
+
+
+.bg-light-gray{
+  background-color: rgba(245, 245, 245, 1);
+}
+
+ 
+
+ .bg-dark-gray{
+  background-color:  rgba(233, 233, 233, 1);
+}
+
+
+
+
