@@ -11,13 +11,14 @@ app.prepare().then(() => {
 
   // Set cache headers for static assets
   server.use('/_next/static', express.static('.next/static', { maxAge: '365d' }));
-  /*
+  
   server.get('/:slug', (req, res) => {
+    console.log("server log", req.params.slug);
     const actualPage = '/[slug]';
     const queryParams = { slug: req.params.slug };
     app.render(req, res, actualPage, queryParams);
   });
-  */
+
 
   // Handle other routes
   server.get('*', (req, res) => {

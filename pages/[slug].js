@@ -1,34 +1,87 @@
-import SinglePost from "../components/SinglePost";
+import PostComponent from "../components/PostComponent";
 
-// This function gets called at build time
-export async function getStaticPaths() {
-  const res = await fetch('https://demo.bumppy.com/api2/getSlugs.php');
-  const posts = await res.json();
-  // Get the paths we want to pre-render based on posts
-  const paths = posts.map((post) => ({
-    params: { slug: post.slug },
-  }));
-  // We'll pre-render only these paths at build time.
-  // { fallback: 'blocking' } will server-render pages
-  // on-demand if the path doesn't exist.
-  return { paths, fallback: 'blocking' };
+export async function getServerSideProps({ params }) {
+  const slug = params.slug;
+  console.log("Fetching data for slug:", slug);
+
+  try {
+    // Fetch the single post data
+    const formData = new URLSearchParams();
+    formData.append("single_post_id", slug);
+
+    const postRes = await fetch("https://demo.bumppy.com/api2/getPostContentBySlug.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formData,
+    });
+
+    if (!postRes.ok) {
+      throw new Error(`Failed to fetch post content for slug: ${slug}`);
+    }
+
+
+
+    const postData = await postRes.json();
+    console.log("Post data:", postData);
+
+
+
+    // Fetch related posts data
+
+    const formData2 = new URLSearchParams();
+    formData2.append("language", "en");
+    formData2.append("single_post_id", postid);
+    formData2.append("page", 5);
+
+    const relatedPostRes = await fetch("https://demo.bumppy.com/api2/getRelatedPost.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formData2.toString(),
+    });
+
+    if (!relatedPostRes.ok) {
+      throw new Error(`Failed to fetch related posts for slug: ${slug}`);
+    }
+
+    const relatedPosts = await relatedPostRes.json();
+    console.log("Related posts:", relatedPosts);
+
+    return {
+      props: {
+        post: postData.content,
+        relatedPosts,
+        slug,
+      },
+    };
+  } catch (error) {
+    console.error("Error in getServerSideProps:", error);
+    return {
+      notFound: true,
+    };
+  }
 }
 
-// This function gets called at build time
-export async function getStaticProps({ params }) {
-  // params contains the post `slug`.
-  // If the route is like /posts/my-post, then params.slug is 'my-post'
+const SinglePostPage = ({ post, relatedPosts, slug }) => {
+  // Make sure any data processing happens in useEffect to avoid mismatches
+  const [hydrated, setHydrated] = React.useState(false);
 
-  // Pass post data to the page via props
-  return { props: { post : params.slug } };
-}
+  React.useEffect(() => {
+    setHydrated(true);
+  }, []);
 
-const SinglePostPage = ({ post }) => {
+  if (!hydrated) {
+    return <div>Loading...</div>; // Show a loading state until hydration completes
+  }
+
   return (
     <div>
-      <SinglePost slug={post} />
+      <PostComponent post={post} relatedPosts={relatedPosts} slug={slug} />
     </div>
   );
-}
+};
 
-export default SinglePostPage;
+ export default SinglePostPage;
